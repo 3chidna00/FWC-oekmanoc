@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.app h1 {
+    margin-top: 0;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#new-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #3b5bdb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+#new-btn:hover {
+    background-color: #2c46b0;
+}
+
+#ft_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.todo-item {
+    background-color: #fef3c7;
+    padding: 12px 15px;
+    border-radius: 6px;
+    word-wrap: break-word;
+}
+
+.todo-item:hover {
+    background-color: #fde68a;
+}

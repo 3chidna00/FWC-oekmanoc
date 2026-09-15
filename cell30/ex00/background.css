@@ -1,0 +1,11 @@
+#change-btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    background-color: #222;
+    color: white;
+}
+
+#change-btn:hover {
+    background-color: #444;
+}

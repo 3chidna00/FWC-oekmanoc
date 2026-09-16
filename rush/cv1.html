@@ -24,7 +24,7 @@
   <main class="max-w-3xl mx-auto px-6 pt-28 pb-20">
 
     <!-- About -->
-    <section id="about" class="scroll-mt-20 flex flex-col sm:flex-row gap-6 items-start mb-20">
+    <section id="about" class="reveal scroll-mt-20 flex flex-col sm:flex-row gap-6 items-start mb-20">
       <img src="https://placehold.co/160x160/e2e8f0/64748b?text=Photo"
            alt="Placeholder photo of First Name Last Name"
            class="w-32 h-32 rounded-full object-cover border border-slate-200 shrink-0">
@@ -36,35 +36,73 @@
           Discovery Piscine. Interested in placeholder topics such as web development, systems
           programming, and design. Replace this paragraph with a real bio.
         </p>
+
+        <ul class="mt-5 flex flex-wrap gap-2" aria-label="Skills">
+          <li class="badge">C</li>
+          <li class="badge">JavaScript</li>
+          <li class="badge">HTML &amp; CSS</li>
+          <li class="badge">Git</li>
+          <li class="badge">Linux</li>
+        </ul>
+
+        <a href="#" class="btn-primary mt-6">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="color:#fff">
+            <path d="M12 3v12"></path>
+            <path d="m7 10 5 5 5-5"></path>
+            <path d="M5 19h14"></path>
+          </svg>
+          Download CV
+        </a>
       </div>
     </section>
 
     <!-- Showcase -->
-    <section id="showcase" class="scroll-mt-20 mb-20">
-      <h2 class="text-lg font-semibold text-slate-900 mb-6">Showcase</h2>
+    <section id="showcase" class="reveal scroll-mt-20 mb-20" style="animation-delay: 0.1s">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-6">Showcase</h2>
       <div class="grid sm:grid-cols-2 gap-4">
         <article class="card">
-          <h3 class="font-medium text-slate-900">Placeholder Project One</h3>
+          <div class="card-icon">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-slate-900">Placeholder Project One</h3>
           <p class="mt-2 text-sm text-slate-600 leading-relaxed">
             Short placeholder description of an accomplishment, project, or skill. Replace with
             real experience.
           </p>
         </article>
         <article class="card">
-          <h3 class="font-medium text-slate-900">Placeholder Project Two</h3>
+          <div class="card-icon">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-slate-900">Placeholder Project Two</h3>
           <p class="mt-2 text-sm text-slate-600 leading-relaxed">
             Short placeholder description of an accomplishment, project, or skill. Replace with
             real experience.
           </p>
         </article>
         <article class="card">
-          <h3 class="font-medium text-slate-900">Placeholder Skill</h3>
+          <div class="card-icon">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m12 3 2.6 5.6 6.1.8-4.4 4.3 1 6.1L12 17l-5.3 2.8 1-6.1L3.3 9.4l6.1-.8L12 3Z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-slate-900">Placeholder Skill</h3>
           <p class="mt-2 text-sm text-slate-600 leading-relaxed">
             Short placeholder description of a technical skill or strength.
           </p>
         </article>
         <article class="card">
-          <h3 class="font-medium text-slate-900">Placeholder Accomplishment</h3>
+          <div class="card-icon">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="5"></circle>
+              <path d="m8.5 12.5-1.5 7 5-2.5 5 2.5-1.5-7"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-slate-900">Placeholder Accomplishment</h3>
           <p class="mt-2 text-sm text-slate-600 leading-relaxed">
             Short placeholder description of an award, certification, or milestone.
           </p>
@@ -73,8 +111,8 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="scroll-mt-20">
-      <h2 class="text-lg font-semibold text-slate-900 mb-6">Contact</h2>
+    <section id="contact" class="reveal scroll-mt-20" style="animation-delay: 0.2s">
+      <h2 class="text-2xl font-semibold text-slate-900 mb-6">Contact</h2>
       <div class="flex flex-wrap gap-3 text-sm font-medium">
         <a href="mailto:placeholder@example.com" class="contact-link">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -102,6 +140,13 @@
     </section>
 
   </main>
+
+  <footer class="site-footer">
+    <div class="max-w-3xl mx-auto px-6 py-8 flex flex-col sm:flex-row gap-2 items-center justify-between">
+      <p>&copy; 2026 First Name Last Name &middot; Discovery Piscine, 42 Bangkok</p>
+      <a href="index.html" class="nav-link">&larr; All profiles</a>
+    </div>
+  </footer>
 
 </body>
 </html>

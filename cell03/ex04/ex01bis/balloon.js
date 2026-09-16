@@ -28,7 +28,21 @@ $balloon.on("click", function () {
     setColor(colorIndex + 1);
 });
 
+let shrink_interval = null;
+
 $balloon.on("mouseleave", function () {
-    setSize(Math.max(MIN_SIZE, size - 5));
-    setColor(colorIndex - 1);
+    clearInterval(shrink_interval);
+    shrink_interval = setInterval(function() {
+        const newsize = Math.max(MIN_SIZE, size - 5);
+        setSize(newsize);
+        setColor(colorIndex - 1);
+
+        if (newsize === MIN_SIZE) {
+            clearInterval(shrink_interval);
+        }
+    }, 100);
+});
+
+$balloon.on("mouseenter", function () {
+    clearInterval(shrink_interval);
 });

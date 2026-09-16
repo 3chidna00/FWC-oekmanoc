@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calc-form {
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+#calc-form input[type="text"] {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#calc-form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#calc-form input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #3b5bdb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calc-form input[type="submit"]:hover {
+    background-color: #2c46b0;
+}

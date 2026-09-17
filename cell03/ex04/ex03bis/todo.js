@@ -2,12 +2,13 @@ const $list = $("#ft_list");
 const $newBtn = $("#new-btn");
 
 function getTodos() {
-    const cookie = document.cookie.split("; ").find(c => c.startsWith("todos="));
-    return cookie ? JSON.parse(decodeURIComponent(cookie.split("=")[1])) : [];
+    const cookie = document.cookie
+    return cookie ? JSON.parse(cookie.split("=")[1]) : [];
 }
 
 function saveTodos(todos) {
-    document.cookie = "todos=" + encodeURIComponent(JSON.stringify(todos)) + "; max-age=" + 60 * 60 * 24 * 365;
+    document.cookie = "todos=" + JSON.stringify(todos) + "; max-age=" + 60 * 60 * 24 * 7;
+    console.log("todos=" + JSON.stringify(todos));
 }
 
 function addTodoToDOM(text, prependToTop) {

@@ -2,12 +2,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 3.5rem; /* fixed nav height, keeps anchor jumps clear of it */
-}
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+  scroll-padding-top: 5rem;
 }
 
 .nav-link {

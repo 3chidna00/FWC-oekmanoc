@@ -1,4 +1,4 @@
-// Highlight the nav link for the section currently in view.
+// Highlight the nav link
 const sections = document.querySelectorAll('main section[id]');
 const navLinks = document.querySelectorAll('.nav-link');
 
